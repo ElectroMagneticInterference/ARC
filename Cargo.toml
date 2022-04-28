@@ -1,0 +1,16 @@
+[package]
+authors = ["Elijah Immer <Hatty@dnd4u.net>"]
+edition = "2021"
+name = "arc"
+version = "0.1.0"
+
+[dependencies]
+memory = { path = "memory" }
+
+[dependencies.windows]
+version = "0.36.1"
+features = ["Win32_Foundation",  "Win32_System_Performance", "Foundation"]
+
+[[bin]]
+name = "arc"
+path = "src/main.rs"
